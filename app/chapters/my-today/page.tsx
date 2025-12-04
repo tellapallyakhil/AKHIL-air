@@ -32,18 +32,22 @@ export default function MyToday() {
           Chapter 4 — Right Now
         </h1>
 
+        {/* Photo frame */}
         <motion.div
           initial={{ scale: 0.96, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.6 }}
           className="relative mx-auto max-w-xs rounded-[30px] border-[4px] border-fuchsia-300 bg-white/95 shadow-[0_24px_50px_rgba(162,28,175,0.45)] p-2"
         >
-          <div className="relative aspect-[3/4] rounded-[24px] overflow-hidden">
+          <div className="relative rounded-[24px] overflow-hidden bg-pink-50">
             <Image
               src="/photos/her4.jpg"
               alt="You today"
-              fill
-              className="object-cover"
+              width={320}
+              height={430}
+              sizes="(max-width: 768px) 90vw, 320px"
+              quality={100}
+              className="w-full h-auto object-contain max-h-[430px]"
             />
           </div>
         </motion.div>
