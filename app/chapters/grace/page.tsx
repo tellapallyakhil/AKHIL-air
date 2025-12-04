@@ -66,24 +66,25 @@ export default function Grace() {
           className="rounded-3xl bg-white/85 backdrop-blur px-5 py-4 shadow-[0_20px_38px_rgba(148,27,89,0.4)] text-sm leading-relaxed text-pink-900 space-y-3"
         >
           <p>
-            Somewhere between the little you and the you I know now, you turned
-            into this – still cute, but now also elegant, calm, and so
-            unbelievably beautiful.
+            Somewhere between the little you and the you I know now, you became
+            this — still the same warmth, but now touched with elegance, calm,
+            and a quiet kind of beauty that doesn&apos;t try to be seen.
           </p>
 
           <p>
             <span className="font-semibold">
-              Every year added something to you,
+              Time didn&apos;t just add years to you,
             </span>{" "}
-            not just on the outside, but in your heart too – more kindness, more
-            softness, more strength. You didn&apos;t just grow up, you{" "}
+            it shaped your heart too — more softness, more patience, more
+            strength. You didn&apos;t simply grow up. You slowly, naturally{" "}
             <em>grew into grace</em>.
           </p>
 
           <p>
-            When I look at this picture, I feel proud of you in a way that&apos;s
-            hard to explain. It makes me want to be there for all the future
-            versions of you you&apos;re still becoming.
+            And if you ever think beauty only comes from a camera lens or its
+            filters, remember this — my eyes carry a filter of their own. One
+            that doesn&apos;t smooth or edit, but sees you exactly as you are,
+            and somehow makes you even more beautiful in every way you exist.
           </p>
         </motion.div>
       </div>
