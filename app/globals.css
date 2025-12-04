@@ -1,26 +1,186 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+/* ------------------------------
+   Global base styles
+--------------------------------*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  color-scheme: light;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  color: #0f172a;
+}
+
+/* ------------------------------
+   Romantic animated background
+--------------------------------*/
+.love-background {
+  background:
+    radial-gradient(circle at 10% 10%, #ffe4e6 0%, transparent 45%),
+    radial-gradient(circle at 90% 15%, #fecdd3 0%, transparent 45%),
+    radial-gradient(circle at 20% 85%, #fbcfe8 0%, transparent 45%),
+    radial-gradient(circle at 80% 80%, #fda4af 0%, transparent 45%),
+    linear-gradient(135deg, #fecdd3, #f9a8d4, #f472b6);
+  background-size: 160% 160%;
+  animation: loveGradient 16s ease-in-out infinite alternate;
+}
+
+@keyframes loveGradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+/* ------------------------------
+   Floating hearts animation
+--------------------------------*/
+.heart {
+  position: absolute;
+  bottom: -10%;
+  font-size: 18px;
+  opacity: 0.35;
+  pointer-events: none;
+  animation: floatUp 16s linear infinite;
+}
+
+.heart:nth-child(1) {
+  left: 8%;
+  font-size: 20px;
+  animation-duration: 14s;
+}
+.heart:nth-child(2) {
+  left: 22%;
+  font-size: 14px;
+  animation-duration: 19s;
+}
+.heart:nth-child(3) {
+  left: 38%;
+  font-size: 22px;
+  animation-duration: 17s;
+}
+.heart:nth-child(4) {
+  left: 55%;
+  font-size: 16px;
+  animation-duration: 21s;
+}
+.heart:nth-child(5) {
+  left: 72%;
+  font-size: 24px;
+  animation-duration: 18s;
+}
+.heart:nth-child(6) {
+  left: 88%;
+  font-size: 14px;
+  animation-duration: 20s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.8;
+  }
+  70% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(-120vh) scale(1.08);
+    opacity: 0;
+  }
+}
+
+/* ------------------------------
+   Big heart (welcome screen)
+--------------------------------*/
+.big-heart-wrapper {
+  width: 320px;
+  height: 310px;
+  position: relative;
+}
+
+.big-heart-shape {
+  position: absolute;
+  inset: 0;
+  transform: rotate(-45deg);
+  background: radial-gradient(circle at 30% 30%, #fecaca, #fb7185);
+  border-radius: 40px;
+  box-shadow:
+    0 20px 50px rgba(190, 24, 93, 0.6),
+    0 0 45px rgba(248, 113, 113, 0.55);
+}
+
+.big-heart-shape::before,
+.big-heart-shape::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  border-radius: 50%;
+}
+
+.big-heart-shape::before {
+  top: -50%;
+  left: 0;
+}
+
+.big-heart-shape::after {
+  left: 50%;
+  top: 0;
+}
+
+.big-heart-inner {
+  position: absolute;
+  inset: 12%;
+  padding: 1.2rem 1.3rem 2.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  text-align: center;
+  transform: rotate(0deg);
+}
+
+/* ------------------------------
+   Button interaction
+--------------------------------*/
+.button-tap {
+  transition: transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.button-tap:active {
+  transform: scale(0.96) translateY(1px);
+  box-shadow: 0 8px 20px rgba(190, 24, 93, 0.55);
+}
+
+/* ------------------------------
+   Scrollbar
+--------------------------------*/
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 114, 182, 0.6);
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(236, 72, 153, 0.9);
 }
