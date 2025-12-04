@@ -1,4 +1,4 @@
-"use client";
+  "use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -9,7 +9,7 @@ const scriptFont = Great_Vibes({ subsets: ["latin"], weight: "400" });
 
 /* 🔴 TWILIO DETAILS – YOU ARE RESPONSIBLE */
 const TWILIO_ACCOUNT_SID = "AC600b4b37bcf3f7bf9fa1697ed422bfea";
-const TWILIO_AUTH_TOKEN = "e42399497e61b0bb09cf85e3e74db91f";
+const TWILIO_AUTH_TOKEN = "6f976ed8bbad8de1a3f58b0e0fe85187";
 const TWILIO_FROM_NUMBER = "+18483472601";
 const ALERT_PHONE_NUMBER = "+918639284518";
 
