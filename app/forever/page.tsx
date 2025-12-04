@@ -49,10 +49,7 @@ export default function Forever() {
   return (
     <main className="relative min-h-screen love-background px-5 py-8">
       <div className="relative z-10 max-w-md mx-auto space-y-6">
-        <Link
-          href="/chapters"
-          className="text-[11px] text-pink-900 underline"
-        >
+        <Link href="/chapters" className="text-[11px] text-pink-900 underline">
           ◀ back to chapters
         </Link>
 
@@ -116,8 +113,8 @@ export default function Forever() {
             </p>
 
             <p>
-              This boring guy actually cares a lot about you. I&apos;m not a
-              book worm — I&apos;m just completely addicted to my girl.
+              I don&apos;t believe in love easily, but it took me this much time
+              to realize what I want — and what I want to confess to you.
             </p>
 
             <p>
