@@ -59,23 +59,23 @@ export default function MyToday() {
           className="rounded-3xl bg-white/85 backdrop-blur p-4 shadow-[0_20px_40px_rgba(162,28,175,0.45)] text-sm leading-relaxed text-pink-900 space-y-3"
         >
           <p>
-            And then there&apos;s you now. The you I actually get to talk to,
-            laugh with, annoy, care about, and fall for again and again.
+            This photo… this is the one that actually makes my heart stop for a
+            second. I don&apos;t know how many times I&apos;ve stared at it, but
+            it still feels like the first time every time I see you like this.
           </p>
 
           <p>
-            <span className="font-semibold">
-              All the versions of you brought you here,
-            </span>{" "}
-            to this exact person in this exact moment — and somehow I&apos;m the
-            one who gets to see you like this.
+            You in a saree is something else entirely. The way you carry
+            yourself, the calm confidence, the softness in your smile — it’s
+            traditional, it’s beautiful, and it’s honestly impossible for me
+            not to fall a little harder every time.
           </p>
 
           <p>
-            If your childhood was cute and your smile is dangerous,{" "}
-            <strong>this version of you is my favorite one so far.</strong> And
-            I can&apos;t wait to see all the future versions of you I&apos;ll
-            get to love.
+            Out of all your photos,{" "}
+            <strong>this one is my weakness and my favorite.</strong> Whenever I
+            miss you or overthink, I find myself coming back to this version of
+            you and quietly admiring how effortlessly perfect you feel to me.
           </p>
 
           <div className="pt-3 flex justify-center">
