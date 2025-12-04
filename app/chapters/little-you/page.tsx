@@ -49,12 +49,12 @@ export default function LittleYou() {
             <Image
               src="/photos/her1.jpg"
               alt="Little you"
-              width={360}
-              height={480}
-              sizes="(max-width: 768px) 90vw, 360px"
+              width={340}
+              height={440}
+              sizes="(max-width: 768px) 90vw, 340px"
               quality={100}
               priority
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain max-h-[420px]"
             />
           </div>
         </motion.div>
@@ -67,20 +67,23 @@ export default function LittleYou() {
           className="rounded-3xl bg-white/85 backdrop-blur px-5 py-4 shadow-[0_20px_38px_rgba(148,27,89,0.4)] text-sm leading-relaxed text-pink-900 space-y-3"
         >
           <p>
-            Look at you… this tiny, soft little version of you. Even back then,
-            you already had that same quiet sweetness that makes everything feel
-            warm and gentle.
+            Look at you… this tiny, soft little version of you. The same eyes,
+            the same little spark, the same quiet sweetness that now makes
+            everything around you feel a little warmer, a little softer.
           </p>
 
           <p>
-            Day by day, year by year, your cuteness never faded — it only grew.
-            From this little kid to the person you are now, everything about
-            you just kept becoming more beautiful.
+            It&apos;s crazy to think that this little you had no idea how beautiful
+            she would grow to be — not just in the way you look, but in the way
+            you care, the way you talk, the way you make people feel without
+            even trying.
           </p>
 
           <p className="font-semibold">
-            When I see this picture, I can’t help but think:  
-            “You were always meant to be loved this deeply.”
+            And this is just the first chapter.  
+            If little you already feels this precious, imagine how the next
+            chapters will feel when we walk through all the versions of you I’ve
+            fallen for, one by one.
           </p>
         </motion.div>
       </div>
