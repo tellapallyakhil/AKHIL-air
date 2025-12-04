@@ -49,11 +49,11 @@ export default function Smile() {
             <Image
               src="/photos/her2.jpg"
               alt="Your smile"
-              width={360}
-              height={480}
-              sizes="(max-width: 768px) 90vw, 360px"
+              width={340}
+              height={440}
+              sizes="(max-width: 768px) 90vw, 340px"
               quality={100}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain max-h-[420px]"
             />
           </div>
         </motion.div>
@@ -66,14 +66,14 @@ export default function Smile() {
           className="rounded-3xl bg-white/85 backdrop-blur px-5 py-4 shadow-[0_20px_38px_rgba(148,27,89,0.4)] text-sm leading-relaxed text-pink-900 space-y-3"
         >
           <p>
-            There&apos;s a lot of smiles in the world… but this one feels like
-            it was designed just to ruin my self-control in the cutest way
+            There&apos;s a lot of smiles in the world… but this one feels like it
+            was designed just to ruin my self-control in the cutest way
             possible.
           </p>
 
           <p>
-            The way your eyes curve, the way your cheeks lift, the way your
-            whole face lights up –{" "}
+            The way your eyes curve, the way your cheeks lift, the way your whole
+            face lights up –{" "}
             <span className="font-semibold">
               you don&apos;t just smile, you glow,
             </span>{" "}
@@ -81,11 +81,26 @@ export default function Smile() {
           </p>
 
           <p>
-            Every time I see this photo, I remember how lucky I am that out of
-            everyone,{" "}
-            <em>this</em> is the smile I get to wait for, think about, and fall
-            for again and again.
+            Every time I see this photo, I&apos;m reminded how lucky I am that
+            out of everyone, <em>this</em> is the smile I get to wait for and
+            think about. And honestly, there is nothing wrong with falling for
+            you… again and again.
           </p>
+        </motion.div>
+      </div>
+
+      {/* Bottom animated heart */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2">
+        <motion.div
+          animate={{ scale: [1, 1.15, 1] }}
+          transition={{
+            duration: 1.6,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+          className="text-2xl opacity-80"
+        >
+          ❤️
         </motion.div>
       </div>
     </main>
