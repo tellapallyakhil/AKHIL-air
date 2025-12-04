@@ -49,11 +49,11 @@ export default function Grace() {
             <Image
               src="/photos/her3.jpg"
               alt="You growing softer and prettier"
-              width={360}
-              height={480}
-              sizes="(max-width: 768px) 90vw, 360px"
+              width={340}
+              height={440}
+              sizes="(max-width: 768px) 90vw, 340px"
               quality={100}
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain max-h-[420px]"
             />
           </div>
         </motion.div>
